@@ -1,6 +1,12 @@
 # office
 
-Test Azure AI Foundry Office agent skills.
+Test office agent skills.
+
+## Included skills
+
+- `office-documents`: lets the agent process `.docx` and `.pptx` files by
+  extracting their content to Markdown first and then following the user's
+  instruction for the document.
 
 ## Create an Office skill test agent
 
@@ -51,3 +57,4 @@ python office_skill_test_agent.py --skip-run
 ```
 
 If the configured agent does not have Word or PowerPoint skills available, the run should report that clearly instead of pretending the actions succeeded.
+
